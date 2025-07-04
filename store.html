@@ -1,537 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botanical Flowers</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
-    <style>
-        .logo{
-            height: 200px;
-            width: 200px;
-            display: inline-block;
-            border-radius: 300px;
-            border: none;
-            border-width: 0px;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Botanical Flowers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        }
-        .home{
-            height: 40px;
-            border: solid;
-            width: 70px;
-            margin-bottom: 0px;
-            border-width: 0px;
-            size: 50px;
-            margin-left: 200px;
-            display: inline-block;
-            vertical-align: top;   
-            margin-top: 65px;   
-            border-radius: 5px;
-            font-weight: bolder; 
-            background-color: rgb(180, 10, 232);   
-            color: white;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        }
-        .home:hover{
-            background-color: white;
-            color: rgb(180, 10, 232);
-            cursor: pointer;
-        }
-        .cart{
-            height: 40px;
-            border: solid;
-            width: 70px;
-            margin-bottom: 0px;
-            border-width: 0px;
-            size: 50px;
-            margin-left: 20px;
-            display: inline-block;
-            vertical-align: top;   
-            margin-top: 65px;   
-            border-radius: 5px;
-            font-weight: bolder; 
-            background-color: rgb(180, 10, 232);   
-            color: white;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            
-        }
-        .cart:hover{
-            background-color: white;
-            
-            color: rgb(180, 10, 232);
-            cursor: pointer;
-        }
-        .faq{
-            height: 40px;
-            border: solid;
-            width: 70px;
-            margin-bottom: 0px;
-            border-width: 0px;
-            size: 50px;
-            margin-left: 20px;
-            display: inline-block;
-            vertical-align: top;   
-            margin-top: 65px;   
-            border-radius: 5px;
-            font-weight: bolder; 
-            background-color: rgb(180, 10, 232);   
-            color: white;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        }
-        .faq:hover{
-            background-color: white;
-            color: rgb(180, 10, 232);
-            cursor: pointer;
-        }
-        .help{
-            height: 40px;
-            border: solid;
-            width: 70px;
-            margin-bottom: 0px;
-            border-width: 0px;
-            size: 50px;
-            margin-left: 20px;
-            display: inline-block;
-            vertical-align: top;   
-            margin-top: 65px;   
-            border-radius: 5px;
-            font-weight: bolder; 
-            background-color: rgb(180, 10, 232);   
-            color: white;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff0f5;
+    }
 
-        }
-        .help:hover{
-            background-color: white;
-            color: rgb(180, 10, 232);
-            cursor: pointer;
-        }
-        .search{
-            display: inline-block;
-            margin-bottom: 0px;
-            margin-left: 20px;
-            vertical-align: top;
-            margin-top: 65px;
-            height: 40px;
-            width: 175px;
-            border-radius: 10px;
-            border: none;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        }
-        .zoom{
-            height: 20px;
-            width: 20px;
-            display: inline-block;
-            vertical-align: top;
-            margin-left: 8px;
-            margin-top: 75px;
-        }
-        .head-container{
-            background-color: rgb(248, 248, 248);
-            border: none;
-            border-width: 0px;
-            padding-left: 10px;
-            padding-right: 10px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            margin-bottom: 40px;
-            
-        }
-        .floral{
-            height: 220px;
-            width: 200px;
-            margin-top: 0px;
-            margin-left: 0px;
-            display: inline-block;
-        }
-        .first{
-            width: 200px;
-            border: none;
-            border-width: 0px;
-            box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
-            display: inline-block; 
-        }
-        .content1{
-            margin-left: 10px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-top: 8px;
-            margin-bottom: 0px;
-            display: inline-block;
-        }
-        .price1{
-            margin-left: 10px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-top: 8px;
-            
-        }
-        .add1{
-            height: 34px;
-            margin-left: 50px;
-            margin-bottom: 10px;
-            background-color: rgb(241, 182, 192);
-            color: white;
-            font-weight: bold;
-            border-width: 0px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            display: inline-block;
-            
-        }
-        .add1:hover{
-            background-color: white;
-            color: pink;
-            cursor: pointer;
-        }
-        .orchids{
-            height: 220px;
-            width: 200px;
-            margin-top: 0px;
-            margin-left: 0px;
-            
-            }
-        .second{
-            display: inline-block;
-            width: 200px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            margin-left: 10px;
-        }
-        .heading{
-            display: inline-block;
-            font-size: 30px;
-            margin-left: 90px;
-            vertical-align: top;
-            margin-top: 70px;
-            font-family: cursive;
-            font-style: italic;
-            margin-bottom: 0px;
-            
+    .head-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: rgb(248, 248, 248);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
 
-        }
-        .third{
-            width: 200px;
-            display: inline-block;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            margin-left: 10px;
-        }
-        .fourth{
-            width: 200px;
-            display: inline-block;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            margin-left: 10px;
-        }
-        .fifth{
-            width: 200px;
-            display: inline-block;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            margin-left: 10px;
-        }
-        .sixth{
-            width: 200px;
-            display: inline-block;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            margin-left: 10px;
-        }
-        .seventh{
-            width: 200px;
-            display: inline-block;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            margin-left: 10px;
-       
-        }
-        .first-line{
-            margin-bottom: 40px;
-        }
-        .second-title{
-            margin-top: 0px;
-        }
-        .second-line{
-            margin-bottom: 50px;
-        }
-        .brand{
-            font: 20px;
-            display: inline-block;
-            margin-left: 500px;
-            vertical-align: top;
-            margin-top: 0px;   
-            margin-bottom: 0px;             
-        }
-        .loca{
-            display: inline-block;
-            height: 15px;
-            width: 15px;
-        }
-        .adress{
-            display: inline-block;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 15PX;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-        .ph{
-            display: inline-block;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-left: 10px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            font-weight: bold;
-        }
-        .call{
-            height: 15px;
-            width: 15px;
-            font-weight: bold;
-        }
-        .footer{
-            margin-bottom: 0px;
-            
-        }
-        .contact{
-            margin-top: 0px;
-            margin-bottom: 0px;
-            display: inline-block;
-        }
-        .insta{
-            display: inline-block;
-            height: 15px;
-            width: 15px;
-        }
-        .user{
-            font-family: Arial, Helvetica, sans-serif;
-            display: inline-block;
-            margin-left: 15px;
-            margin-top: 8px;
-            font-weight: bold;
-        }
-        .main1{
-            margin-top: 0px;
-            display: inline-block;
-            vertical-align: top;
-            margin-top: 135px;
-            margin-left: 30px;
-            
-            
-        }
-        .naam{
-            display: block;
-        }
-        .email{
-            display: block;
-        }
-        .number{
-            display: block;
-        }
-        .sign{
-            display: block;
-        }
-        .info{
-            display: inline-block;
-            margin-top: 30px;
-            margin-left: 850px;
-        }
-        .reg{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 40px;
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-        .naam{
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0px 0px 4px;
-            width: 200px;
-            height: 40px;
-            margin-top: 15px;
-        }
-        .email{
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0px 0px 4px;
-            width: 200px;
-            height: 40px; 
-            margin-top: 10px;
-        }
-        .number{
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0px 0px 4px;
-            width: 200px;
-            height: 40px; 
-            margin-top: 10px;
-        }
-        .sign{
-            margin-top: 15px;
-            height: 40px;
-            width: 70px;
-            margin-left: 60px;
-            border-radius: 10px;
-            border: none;
-            box-shadow: 0px 0px 6px;
-            background-color: rgb(228, 35, 203);
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-        }
-        .total{
-            background-color: pink;padding-bottom: 50px;
-        }
-        .credit{
-            background-color: purple;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin-left: 0px;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            padding-left: 700px;
-        }
-    </style>  
+    .logo {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .heading {
+      font-size: 24px;
+      font-style: italic;
+      font-family: cursive;
+      color: rgb(180, 10, 232);
+    }
+
+    .nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .home, .cart, .faq, .help {
+      height: 40px;
+      padding: 0 12px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      background-color: rgb(180, 10, 232);
+      color: white;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      cursor: pointer;
+    }
+
+    .home:hover, .cart:hover, .faq:hover, .help:hover {
+      background-color: white;
+      color: rgb(180, 10, 232);
+    }
+
+    .search-container {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .search {
+      height: 35px;
+      width: 160px;
+      padding: 0 10px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .zoom {
+      height: 20px;
+      width: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product-card {
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .content1, .price1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 8px 0;
+    }
+
+    .add1 {
+      padding: 8px 12px;
+      background-color: rgb(241, 182, 192);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .add1:hover {
+      background-color: white;
+      color: pink;
+    }
+
+    .total {
+      background-color: pink;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer, .info {
+      flex: 1 1 300px;
+      padding: 10px;
+    }
+
+    .footer img, .contact img, .social img {
+      height: 15px;
+      width: 15px;
+    }
+
+    .adress, .ph, .user {
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .reg {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .naam, .email, .number {
+      width: 100%;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0px 0px 4px;
+    }
+
+    .sign {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      background-color: rgb(228, 35, 203);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .credit {
+      background-color: purple;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+      .head-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .heading {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+
+      .info {
+        margin-top: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="head-container">
-        <img class="logo" src="logo1.jpeg">
-        <p class="heading">The Ultimate Flower Store</p>
-    <button class="home">Home</button> 
-    <button class="cart">Cart</button>
-    <button class="faq">FAQ</button>
-    <button class="help">Help</button>
-    <input class="search" placeholder="Search here">
-    <img class="zoom" src="zoom.png"> 
-    
-    
-</div>
-    <div class="first-line">
-        <div class="first">
-            <img class="floral" src="floral.webp">
-            <p class="content1">Floral Portrait 5 Roses Bouquet - Pink 1 pc</p>
-            <p class="price1">Rs 149</p>
-            <button class="add1">Add to cart</button>
-
-        </div>
-        <div class="second">
-            <img class="orchids" src="orchids.webp">
-            <p class="content1">Enchanted Blue Orchid Bouquet</p>
-            <p class="price1">Rs 349</p>
-            <button class="add1">Add to cart</button>
-        </div>
-        <div class="third">
-            <img class="orchids" src="adenium.webp">
-            <p class="content1">Rare Adenium Flower plant Pack Of 1</p>
-            <p class="price1">Rs 199</p>
-            <button class="add1">Add to cart</button>
-        </div>   
-        <div class="fourth">
-            <img class="floral" src="gardenia.webp">
-            <p class="content1">	
-                Gardenia Ananta Plant Sapling 1pc</p>
-            <p class="price1">Rs 69</p>
-            <button class="add1">Add to cart</button>
-
-        </div>
-        <div class="fifth">
-            <img class="orchids" src="ajeeb.webp">
-            <p class="content1">	
-                zephyranthes grandiflora rain lily (any color) plant</p>
-            <p class="price1">Rs 299</p>
-            <button class="add1">Add to cart</button>
-        </div>
-        <div class="sixth">
-            <img class="orchids" src="exotic.webp">
-            <p class="content1">	
-                Platone Rose Plant Gulab Plant Exotic Garden Pack</p>
-            <p class="price1">Rs 131</p>
-            <button class="add1">Add to cart</button> 
-        </div> 
-        <div class="seventh">
-            <img class="orchids" src="seventhf.webp">
-            <p class="content1">	
-                Chrysanthemum beautiful flower</p>
-            <p class="price1">Rs 49</p>
-            <button class="add1">Add to cart</button> 
-        </div>     
-
+  <div class="head-container">
+    <img class="logo" src="logo1.jpeg" alt="Logo">
+    <p class="heading">The Ultimate Flower Store</p>
+    <div class="nav">
+      <button class="home">Home</button>
+      <button class="cart">Cart</button>
+      <button class="faq">FAQ</button>
+      <button class="help">Help</button>
     </div>
-    <div class="second-line">
-        <div class="first">
-            <img class="floral" src="hybrid.webp">
-            <p class="content1">	
-                Hybrid Lotus Plant-Rare Double Petal Flower Plant</p>
-            <p class="price1">Rs 449</p>
-            <button class="add1">Add to cart</button>
-
-        </div>
-        <div class="second">
-            <img class="orchids" src="victoria.webp">
-            <p class="content1">	
-                Victorian Love - Best Premium Flowers</p>
-            <p class="price1">Rs 3499</p>
-            <button class="add1">Add to cart</button>
-        </div>
-        <div class="third">
-            <img class="orchids" src="lager.webp">
-            <p class="content1"> Lagerstroemia Speciosa - Plant XL- 8" Inch Pot</p>
-            <p class="price1">Rs 199</p>
-            <button class="add1">Add to cart</button>
-        </div>   
-        <div class="fourth">
-            <img class="floral" src="calla.webp">
-            <p class="content1">	
-                Calla Lily Flower Bulb set of 5</p>
-            <p class="price1">Rs 699</p>
-            <button class="add1">Add to cart</button>
-
-        </div>
-        <div class="fifth">
-            <img class="orchids" src="rose.webp">
-            <p class="content1">Fresh Red Roses in Glass Vase</p>
-            <p class="price1">Rs 1996</p>
-            <button class="add1">Add to cart</button>
-        </div>
-        <div class="sixth">
-            <img class="orchids" src="vinca.webp">
-            <p class="content1">Vinca, Catharanthus roseus (Any Color) - Plant</p>
-            <p class="price1">Rs 150</p>
-            <button class="add1">Add to cart</button> 
-        </div> 
-        <div class="seventh">
-            <img class="orchids" src="lark.webp">
-            <p class="content1">Lark Daisy (Centratherum punctatum) Plant</p>
-            <p class="price1">Rs 49</p>
-            <button class="add1">Add to cart</button> 
-        </div>     
-
+    <div class="search-container">
+      <input class="search" placeholder="Search here">
+      <img class="zoom" src="zoom.png" alt="Search Icon">
     </div>
-    <div class="total">
-        <div class="main1">
-            <div class="footer">
-                <img class="loca" src="loca.png">
-                <p class="adress">Adress :    Serampore, West Bengal</p>
-            </div>
-            
-            <div class="contact">
-                <img class="call" src="call.png">
-                <p class="ph">:6290066264</p>
-            </div>
-            
-                      
-            <div class="social">
-                <img class="insta" src="insta.png">
-                <p class="user">ad1tya.69</p>
-            </div>
-        
-        
-        
-        </div>
-        <div class="info">
-            <p class="reg">Register Now!</p>
-            <input class="naam" placeholder="Enter Your Name">
-            <input class="email" placeholder="Enter Your Mail">
-            <input class="number" placeholder="Enter Your Mobile Number">
-            <button class="sign">Sign up!</button>
-        </div>
+  </div>
 
+  <div class="product-grid">
+    <!-- Repeat this block for each product -->
+    <div class="product-card">
+      <img src="floral.webp" alt="Product">
+      <p class="content1">Floral Portrait 5 Roses Bouquet - Pink 1 pc</p>
+      <p class="price1">Rs 149</p>
+      <button class="add1">Add to cart</button>
     </div>
-    <p class="credit">Designed by Aditya</p>
-    <script></script>
+    <!-- More product-card divs here -->
+  </div>
+
+  <div class="total">
+    <div class="footer">
+      <div>
+        <img src="loca.png" alt="Location Icon">
+        <p class="adress">Address: Serampore, West Bengal</p>
+      </div>
+      <div class="contact">
+        <img src="call.png" alt="Phone Icon">
+        <p class="ph">:6290066264</p>
+      </div>
+      <div class="social">
+        <img src="insta.png" alt="Instagram Icon">
+        <p class="user">@ad1tya.69</p>
+      </div>
+    </div>
+
+    <div class="info">
+      <p class="reg">Register Now!</p>
+      <input class="naam" placeholder="Enter Your Name">
+      <input class="email" placeholder="Enter Your Mail">
+      <input class="number" placeholder="Enter Your Mobile Number">
+      <button class="sign">Sign up!</button>
+    </div>
+  </div>
+
+  <p class="credit">Designed by Aditya</p>
 </body>
 </html>
